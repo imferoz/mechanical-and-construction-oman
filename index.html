@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Mechanical & Construction Services in Oman | AL WEJHA GROUP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&family=Kanit:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./mechanical-and-construction-oman.webp" type="image/webp">
+  <style>
+    :root {
+      --steel-blue: #2c3e50;
+      --construction-orange: #e74c3c;
+      --safety-yellow: #f1c40f;
+      --light-bg: #f5f7fa;
+      --metal-gray: #7f8c8d;
+    }
+    
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--light-bg);
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(to right, var(--steel-blue), #34495e);
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header::before {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path fill="%23f5f7fa" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"/></svg>');
+      background-size: cover;
+      z-index: 1;
+    }
+    
+    header h1 {
+      font-family: 'Kanit', sans-serif;
+      font-size: 2.8rem;
+      margin: 0 0 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    /* Industrial Navigation */
+    nav {
+      background-color: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    nav a {
+      margin: 0 15px;
+      color: var(--steel-blue);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 20px 0;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: var(--construction-orange);
+      transition: width 0.3s ease;
+    }
+    
+    nav a:hover::after {
+      width: 100%;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero-img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 60px 0 40px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 60px 0;
+    }
+    
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: all 0.3s ease;
+      border-top: 4px solid var(--construction-orange);
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    }
+    
+    /* Industrial CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--steel-blue), #1a2634);
+      color: white;
+      padding: 60px 20px;
+      margin: 60px 0;
+      border-radius: 8px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 150px;
+      height: 150px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23ffffff10"><rect width="30" height="30" x="10" y="10"/><rect width="30" height="30" x="60" y="10"/><rect width="30" height="30" x="10" y="60"/><rect width="30" height="30" x="60" y="60"/></svg>');
+      background-size: contain;
+    }
+    
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: var(--construction-orange);
+      color: white;
+      padding: 14px 30px;
+      text-decoration: none;
+      border-radius: 50px;
+      margin: 10px 10px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      background-color: #c0392b;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    
+    footer {
+      background: linear-gradient(to right, var(--steel-blue), #1a2634);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      
+      .hero-img {
+        height: 350px;
+      }
+      
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      nav a {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Mechanical & Construction</h1>
+    <p>Integrated industrial solutions across Oman</p>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <a href="https://www.alwejhagroup.com/"><i class="fas fa-home"></i> Home</a>
+      <a href="https://www.alwejhagroup.com/area-of-expertise"><i class="fas fa-cogs"></i> Expertise</a>
+      <a href="https://www.alwejhagroup.com/our-services"><i class="fas fa-tools"></i> Services</a>
+      <a href="https://www.alwejhagroup.com/our-clients"><i class="fas fa-users"></i> Clients</a>
+      <a href="https://www.alwejhagroup.com/contact"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <img class="hero-img" 
+         src="./mechanical-and-construction-oman.webp" 
+         alt="Mechanical and construction services in Oman"
+         loading="eager">
+
+    <section>
+      <h2><i class="fas fa-industry" style="color: var(--construction-orange);"></i> Our Integrated Services</h2>
+      <p>AL WEJHA GROUP delivers comprehensive mechanical and construction solutions for industrial and commercial projects throughout Oman, combining engineering excellence with local expertise.</p>
+      
+      <div class="service-grid">
+        <div class="service-card">
+          <h3><i class="fas fa-hammer"></i> Structural Construction</h3>
+          <ul>
+            <li>Steel structure erection</li>
+            <li>Concrete foundation works</li>
+            <li>Pipe rack installation</li>
+            <li>Platform construction</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h3><i class="fas fa-cogs"></i> Mechanical Installation</h3>
+          <ul>
+            <li>Rotating equipment setup</li>
+            <li>Piping systems installation</li>
+            <li>HVAC ductwork</li>
+            <li>Material handling systems</li>
+          </ul>
+        </div>
+        
+        <div class="service-card">
+          <h3><i class="fas fa-hard-hat"></i> Industrial Maintenance</h3>
+          <ul>
+            <li>Preventive maintenance programs</li>
+            <li>Equipment overhauls</li>
+            <li>Shutdown services</li>
+            <li>Structural repairs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Ready to Start Your Project?</h2>
+      <p>Contact our mechanical engineering team for a consultation</p>
+      <div>
+        <a href="/contact" class="cta-button"><i class="fas fa-paper-plane"></i> Request Quote</a>
+        <a href="/our-services" class="cta-button"><i class="fas fa-clipboard-list"></i> Service Details</a>
+      </div>
+    </section>
+
+    <section style="background: rgba(44,62,80,0.05); padding: 40px; border-radius: 8px; border-left: 4px solid var(--construction-orange);">
+      <h2><i class="fas fa-certificate" style="color: var(--construction-orange);"></i> Why Choose Us?</h2>
+      <ul>
+        <li>20+ years Oman experience</li>
+        <li>Class A Omani contractor license</li>
+        <li>In-house engineering team</li>
+        <li>Safety-first work culture</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AL WEJHA GROUP | Mechanical & Construction Division</p>
+    <p>Serving all industrial zones across Oman</p>
+  </footer>
+</body>
+</html>
